@@ -72,7 +72,7 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
         } else {
             Log.d(Constants.TAG, "onCreate() method was invoked with a previous state");
 
-            // ce fac astea?????
+            // vedem valorile existe din executia anterioara sau resetam campurile?
             if (savedInstanceState.containsKey(Constants.USERNAME_EDIT_TEXT)) {
                 EditText usernameEditText = (EditText)findViewById(R.id.username_edit_text);
                 usernameEditText.setText(savedInstanceState.getString(Constants.USERNAME_EDIT_TEXT));
